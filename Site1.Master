@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FinalProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/StyleSheet.css" rel="stylesheet" />
+    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
+</head>
+<body>
+   <form id="form1" runat="server">
+         <div id="Wrapper">
+            <header class="auto-style1">
+                <address>
+                    <strong>TechTribe Shopping System</strong></address>
+             </header>
+
+            <aside><br />
+               <div class="sidebar">
+                    <a class="active" href="/Default.aspx">Home</a><br />
+                   <asp:LinkButton ID="btnAdmin" runat="server" PostBackUrl="~/Admin/Default.aspx" CausesValidation="False">Admin</asp:LinkButton>
+                   <asp:LinkButton ID="btnRegister" runat="server" PostBackUrl="~/Register.aspx" CausesValidation="False">Register</asp:LinkButton>
+                   <asp:LinkButton ID="btnMember" runat="server" PostBackUrl="~/Member/Default.aspx" CausesValidation="False">Member</asp:LinkButton>
+                   <asp:LinkButton ID="btnLogin" runat="server" PostBackUrl="~/Login.aspx" CausesValidation="False">Login</asp:LinkButton>
+                    <asp:LinkButton ID="btnAccount" runat="server" PostBackUrl="~/Member/Account.aspx" CausesValidation="False">Account</asp:LinkButton>
+                   <br />
+                   <br />
+&nbsp;&nbsp;
+                   <br />
+&nbsp;&nbsp;
+</div>
+
+
+
+
+                    
+             </aside>
+
+            <section id="ContentArea"><br />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+                    <p>
+                    </p>
+                </asp:ContentPlaceHolder>
+             </section>
+             <footer style="text-align:center" class="auto-style2">
+                 <p style="height: 0px; width: 1052px; margin-left: 80px">
+                     Connect with us on:
+                <a href="#" class="fa fa-facebook"></a>&nbsp;&nbsp;
+                <a href="#" class="fa fa-twitter"></a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-google"></a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-linkedin"></a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-youtube"></a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-instagram"></a>
+                 </p>
+            </footer>
+        </div>
+      
+    </form>
+</body>
+</html>
